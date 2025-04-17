@@ -4,7 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cec05c6-6c0c-48e1-99af-945ab5b8e21a" name="Changes" comment="" />
+    <list default="true" id="1cec05c6-6c0c-48e1-99af-945ab5b8e21a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/Course/CourseDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/Course/CourseDAOImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/Student/StudentDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/Student/StudentDAOImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/login/loginDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/model/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/model/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/service/Course/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/service/Course/CourseServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/service/Student/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/service/Student/StudentServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/service/login/loginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/presentation/admin/CourseManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/presentation/admin/adminUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/presentation/login/LoginUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/presentation/student/studentUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/utils/CurrentStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/utils/TableConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/validate/CourseValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/config/ConnectionDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/config/ConnectionDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/dao/AppDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/AppDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/model/IApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/model/IApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/service/AppService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/service/AppService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/presentation/loginUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/utils/FormatTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/validate/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/validate/Validator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,39 +45,63 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;hyeuhieu123&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/hyeuhieu123/java_project.git&quot;,
+    &quot;accountId&quot;: &quot;384327ea-b632-421a-8df6-d6dddaf21c74&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2vnQLgvOyOGsmz8GuUhpRWdYLGZ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/admin/OneDrive/Máy tính/mysql-connector-j-9.2.0/mysql-connector-j-9.2.0.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.4275862",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.MainApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/IdeaProjects/java_project/src/ra/edu/business/service&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.4275862&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\IdeaProjects\java_project\src\ra\edu\business\service" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -62,11 +118,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1744778316583</updated>
-      <workItem from="1744778317767" duration="316000" />
+      <workItem from="1744778317767" duration="743000" />
+      <workItem from="1744792404220" duration="13913000" />
+      <workItem from="1744852184924" duration="8256000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
