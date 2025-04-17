@@ -18,7 +18,7 @@ create table student(
 );
 
 INSERT INTO student (name, dob, email, sex, phone, password) VALUES
-                                                                 ('Student 1', '2000-01-01', '1', 1, '1234567890', '1'),
+                                                                 ('Student 1', '2000-01-01', 'a@gmail.com', 1, '1234567890', '1'),
                                                                  ('Student 2', '2000-02-02', 'student2@example.com', 0, '1234567891', 'password2'),
                                                                  ('Student 3', '2000-03-03', 'student3@example.com', 1, '1234567892', 'password3'),
                                                                  ('Student 4', '2000-04-04', 'student4@example.com', 0, '1234567893', 'password4'),
