@@ -4,15 +4,20 @@ import ra.edu.business.model.Student;
 
 public class CurrentStudent {
     private static Student currentStudent;
-    public static void setCurrentStudent(Student student) {
+    public static String currentAccountPassword;
+    public static void setCurrentStudent(Student student,String password) {
+
         currentStudent = student;
+        currentAccountPassword=password;
+        System.out.println("Hello "+student.getName());
     }
-    public static void getCurrentStudent() {
-        if (currentStudent != null) {
-            System.out.println("hello " + currentStudent.getName());
-        } else {
-            System.out.println("ko lay duoc nguoi dung ");
-        }
+
+    public static String getCurrentAccountPassword() {
+        return currentAccountPassword;
+    }
+
+    public static Student getCurrentStudent() {
+        return currentStudent;
     }
     public static void clearCurrentStudent() {
         currentStudent = null;

@@ -58,14 +58,20 @@ public class Course implements IApp {
 
     @Override
     public void inputData(Scanner sc) {
-        this.name= CourseValidator.validateCourseName("nhap ten khoa hoc",sc,1,20);
-        this.duration=Validator.validateInteger("nhap thoi gian",sc);
-        this.instructor=Validator.validateString("nhap giang vien",sc,1,100);
-        this.create_date=Validator.validateDate("nhap ngay tao",sc);
+        this.name= CourseValidator.validateCourseName("Nhap ten khoa hoc",sc,1,20);
+        this.duration=Validator.validateInteger("Nhap thoi gian",sc);
+        this.instructor=Validator.validateString("Nhap giang vien",sc,1,20);
+
     }
 
     @Override
     public void displayData() {
-        System.out.printf("%-20s%-20s%-20d%-20s%-20s\n", id, name, duration, instructor, create_date);
+        System.out.printf("║ %-30s ║ %-30s ║ %-30d ║ %-30s ║ %-30s ║%n",
+                this.getId(),
+                this.getName(),
+                this.getDuration(),
+                this.getInstructor(),
+                this.getCreate_date());
+
     }
 }

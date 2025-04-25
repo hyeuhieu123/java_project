@@ -5,7 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cec05c6-6c0c-48e1-99af-945ab5b8e21a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/Enrollment/EnrollmentDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/Enrollment/EnrollmentDAOImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/statistict/StatistictDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/statistict/StatististDAOImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/model/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/model/Enrollment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/service/Enrollment/EnrollmentSERVICE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/service/Enrollment/EnrollmentServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/service/Statistict/StatistictSERVICE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/service/Statistict/StatistictServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/presentation/admin/EnrollmentManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/presentation/admin/StatistictManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/presentation/admin/StudentManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/utils/PaginationUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/edu/validate/StudentValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7f0daf8a-bcbe-4c68-85a0-cdfd6d716000.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7f0daf8a-bcbe-4c68-85a0-cdfd6d716000.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7f0daf8a-bcbe-4c68-85a0-cdfd6d716000/console.sql" beforeDir="false" afterPath="$PROJECT_DIR$/7f0daf8a-bcbe-4c68-85a0-cdfd6d716000/console.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/dao/AppDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/AppDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/dao/Course/CourseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/Course/CourseDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/dao/Course/CourseDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/Course/CourseDAOImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/dao/Student/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/Student/StudentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/dao/Student/StudentDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/Student/StudentDAOImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/dao/login/loginDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/login/loginDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/model/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/model/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/service/AppService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/service/AppService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/service/Course/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/service/Course/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/service/Course/CourseServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/service/Course/CourseServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/service/Student/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/service/Student/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/service/Student/StudentServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/service/Student/StudentServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/service/login/loginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/service/login/loginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/presentation/admin/CourseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/presentation/admin/CourseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/presentation/admin/adminUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/presentation/admin/AdminUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/presentation/login/LoginUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/presentation/login/LoginUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/presentation/student/studentUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/presentation/student/studentUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/utils/CurrentStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/utils/CurrentStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/utils/TableConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/utils/TableConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/validate/CourseValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/validate/CourseValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/edu/validate/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/validate/Validator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +77,9 @@
     &quot;accountId&quot;: &quot;384327ea-b632-421a-8df6-d6dddaf21c74&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -59,6 +104,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.4275862&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -71,6 +117,26 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\admin\IdeaProjects\java_project\src\ra\edu\business\service" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ra.edu.MainApplication" />
+      <module name="java_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ra.edu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -91,7 +157,35 @@
       <workItem from="1744778317767" duration="743000" />
       <workItem from="1744792404220" duration="13913000" />
       <workItem from="1744852184924" duration="8556000" />
-      <workItem from="1744878568866" duration="874000" />
+      <workItem from="1744878568866" duration="18568000" />
+      <workItem from="1744936278924" duration="15390000" />
+      <workItem from="1744965196645" duration="5180000" />
+      <workItem from="1744989941217" duration="1442000" />
+      <workItem from="1745049052336" duration="9046000" />
+      <workItem from="1745134406503" duration="5369000" />
+      <workItem from="1745145093368" duration="937000" />
+      <workItem from="1745158160740" duration="4804000" />
+      <workItem from="1745199475893" duration="7085000" />
+      <workItem from="1745217768473" duration="1542000" />
+      <workItem from="1745219733266" duration="2646000" />
+      <workItem from="1745223862740" duration="8202000" />
+      <workItem from="1745293336634" duration="8497000" />
+      <workItem from="1745310325956" duration="5843000" />
+      <workItem from="1745327920549" duration="9766000" />
+      <workItem from="1745338461385" duration="1622000" />
+      <workItem from="1745370179140" duration="25000" />
+      <workItem from="1745387335435" duration="4500000" />
+      <workItem from="1745391885950" duration="693000" />
+      <workItem from="1745396760675" duration="1855000" />
+      <workItem from="1745399588483" duration="674000" />
+      <workItem from="1745400921893" duration="571000" />
+      <workItem from="1745402461257" duration="277000" />
+      <workItem from="1745403962326" duration="1983000" />
+      <workItem from="1745420364801" duration="302000" />
+      <workItem from="1745482975736" duration="12895000" />
+      <workItem from="1745506551809" duration="15000" />
+      <workItem from="1745561872384" duration="538000" />
+      <workItem from="1745568927802" duration="7835000" />
     </task>
     <servers />
   </component>
@@ -108,5 +202,24 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ra/edu/business/dao/Enrollment/EnrollmentDAOImp.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

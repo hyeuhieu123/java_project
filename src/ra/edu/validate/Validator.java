@@ -16,45 +16,49 @@ public class Validator {
             String input = scanner.nextLine();
             try {
                 int value = Integer.parseInt(input);
+                if(value<0){
+                    System.out.println("Hay nhap lai so nguyen duong");
+                    continue;
+                }
                 return value;
 
             } catch (NumberFormatException e) {
-                System.out.println("Please enter a valid number");
+                System.out.println("Hay nhap so nguyen");
             }
         }
     }
 
-    public static double validateDouble(String message, Scanner scanner, double min, double max) {
-        System.out.println(message);
-        while (true) {
-            String input = scanner.nextLine();
-            try {
-                double value = Double.parseDouble(input);
-                if (value >= min && value <= max) {
-                    return value;
-                }
-                System.out.printf("Please enter a number between %.2f and %.2f\n", min, max);
-            } catch (NumberFormatException e) {
-                System.out.println("Please enter a valid number");
-            }
-        }
-    }
+//    public static double validateDouble(String message, Scanner scanner, double min, double max) {
+//        System.out.println(message);
+//        while (true) {
+//            String input = scanner.nextLine();
+//            try {
+//                double value = Double.parseDouble(input);
+//                if (value >= min && value <= max) {
+//                    return value;
+//                }
+//                System.out.printf("Please enter a number between %.2f and %.2f\n", min, max);
+//            } catch (NumberFormatException e) {
+//                System.out.println("Please enter a valid number");
+//            }
+//        }
+//    }
 
-    public static float validateFloat(String message, Scanner scanner, float min, float max) {
-        System.out.println(message);
-        while (true) {
-            String input = scanner.nextLine();
-            try {
-                float value = Float.parseFloat(input);
-                if (value >= min && value <= max) {
-                    return value;
-                }
-                System.out.printf("Please enter a number between %.2f and %.2f\n", min, max);
-            } catch (NumberFormatException e) {
-                System.out.println("Please enter a valid number");
-            }
-        }
-    }
+//    public static float validateFloat(String message, Scanner scanner, float min, float max) {
+//        System.out.println(message);
+//        while (true) {
+//            String input = scanner.nextLine();
+//            try {
+//                float value = Float.parseFloat(input);
+//                if (value >= min && value <= max) {
+//                    return value;
+//                }
+//                System.out.printf("Please enter a number between %.2f and %.2f\n", min, max);
+//            } catch (NumberFormatException e) {
+//                System.out.println("Please enter a valid number");
+//            }
+//        }
+//    }
 
     public static boolean validateBoolean(String message, Scanner scanner) {
         System.out.println(message + " (true/false):");
@@ -63,7 +67,7 @@ public class Validator {
             if (input.equals("true") || input.equals("false")) {
                 return Boolean.parseBoolean(input);
             }
-            System.out.println("Please enter true or false");
+            System.out.println("Hay nhap true hay false");
         }
     }
 
@@ -73,9 +77,14 @@ public class Validator {
         while (true) {
             String input = scanner.nextLine();
             try {
-                return LocalDate.parse(input, formatter);
+                LocalDate value = LocalDate.parse(input, formatter);
+                if(value.isAfter(LocalDate.now())){
+                    System.out.println("Nam khong duoc lon hon ngay hien tai");
+                    continue;
+                }
+                return value;
             } catch (Exception e) {
-                System.out.println("Please enter a valid date (dd/MM/yyyy)");
+                System.out.println("Hay nhap theo dinh dang ngay (dd/MM/yyyy)");
             }
         }
     }
@@ -83,7 +92,7 @@ public class Validator {
     public static <T extends Enum<T>> T validateEnum(String message, Scanner scanner, Class<T> enumClass) {
         System.out.println(message);
         while (true) {
-            System.out.println("hay nhap theo dinh dang sau");
+            System.out.println("Hay nhap theo dinh dang sau");
             for (T constanst : enumClass.getEnumConstants()) {
                 System.out.print(constanst + "\t");
             }
@@ -101,34 +110,16 @@ public class Validator {
         }
 
     }
-
-    public static String validateEmail(String message, Scanner scanner) {
-        System.out.println(message);
-        while (true) {
-            String input = scanner.nextLine();
-            if (input.isEmpty()) {
-                System.out.println("hay nhap lai");
-                continue;
-            }
-            if (!input.matches("[a-zA-Z0_9]+@gmail.com")) {
-                System.out.println("hay nhap lai");
-            } else {
-                return input;
-            }
-
-        }
-    }
-
     public static String validateString(String message, Scanner scanner, int min, int max) {
         System.out.println(message);
         do {
             String input = scanner.nextLine();
             if (input.isEmpty()) {
-                System.out.println("hay nhap lai");
+                System.out.println("Hay nhap lai");
                 continue;
             }
             if (input.length() < min || input.length() > max) {
-                System.out.println("hay nhap lai do dai tu " + min + " den " + max);
+                System.out.println("Hay nhap lai do dai tu " + min + " den " + max);
             } else {
                 return input;
             }
@@ -145,7 +136,7 @@ public class Validator {
             if (!sdt.isEmpty() && Pattern.matches(phoneRegex, sdt.trim())) {
                 return sdt;
             } else {
-                System.out.println("hay nhap lai");
+                System.out.println("Hay nhap theo sdt VN");
             }
         } while (true);
 

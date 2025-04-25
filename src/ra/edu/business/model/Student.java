@@ -1,5 +1,6 @@
 package ra.edu.business.model;
 
+import ra.edu.validate.StudentValidator;
 import ra.edu.validate.Validator;
 
 import java.time.LocalDate;
@@ -11,13 +12,22 @@ public class Student implements IApp {
     private String name;
     private LocalDate dob;
     private String email;
-    private String password;
     private String phone;
     private boolean sex;
     private LocalDate create_at;
 
 
     public Student() {
+    }
+
+    public Student(int id ,String name, LocalDate dob, String email,  boolean sex,String phone, LocalDate create_at) {
+        this.id = id;
+        this.name = name;
+        this.dob = dob;
+        this.email = email;
+        this.phone = phone;
+        this.sex = sex;
+        this.create_at = create_at;
     }
 
     public int getId() {
@@ -52,13 +62,7 @@ public class Student implements IApp {
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
-    }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
 
     public String getPhone() {
         return phone;
@@ -86,16 +90,36 @@ public class Student implements IApp {
 
     @Override
     public void inputData(Scanner sc) {
-
-    }
-    public void inputDataLogin(Scanner sc){
-        this.email= Validator.validateEmail("nhap email",sc);
-        this.password=Validator.validateString("nhap mat khau",sc,1,20);
-
+        name = Validator.validateString("Nhap ten", sc, 1, 100);
+        dob = Validator.validateDate("Nhap ngay sinh", sc);
+        email= StudentValidator.validateStudentEmail("Nhap email",sc);
+        sex = Validator.validateBoolean("Nhap gioi tinh(true:nam | false:nu)", sc);
+        phone = Validator.validatePhone("Nhap so dien thoai", sc);
     }
 
     @Override
     public void displayData() {
+        System.out.printf("║%-20d║%-20s║%-20s║%-30s║%-20s║%-20s║%-20s║\n",
+                this.getId(),
+                this.getName(),
+                this.getDob(),
+                this.getEmail(),
+                this.isSex() ? "Nam" : "Nu",
+                this.getPhone(),
+                this.getCreate_at().toString());
 
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", dob=" + dob +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", sex=" + sex +
+                ", create_at=" + create_at +
+                '}';
     }
 }

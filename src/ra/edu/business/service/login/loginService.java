@@ -1,18 +1,19 @@
 package ra.edu.business.service.login;
 
 import ra.edu.business.dao.login.loginDAO;
+import ra.edu.business.model.Account;
+import ra.edu.business.model.Student;
+import ra.edu.business.service.Student.StudentServiceImp;
 
 public class loginService {
     private final loginDAO loginDao;
+
     public loginService(){
         this.loginDao = new loginDAO();
     }
-    public boolean loginAdmin(String username, String password) {
-
-        return loginDao.loginAdmin(username,password);
+    public Account login(String email, String password) {
+        return loginDao.login(email,password);
     }
 
-    public boolean loginStudent(String email, String password) {
-        return loginDao.loginStudent(email,password);
-    }
+
 }

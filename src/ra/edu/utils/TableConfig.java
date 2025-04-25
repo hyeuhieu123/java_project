@@ -1,17 +1,34 @@
 package ra.edu.utils;
 
-public class TableConfig {
-    private final String tableName;
-    private final int itemPerPage;
-    private final String countColumn;
+import java.util.List;
+import java.util.Map;
 
-    public TableConfig(String tableName, int itemPerPage, String countColumn) {
-        this.tableName = tableName;
-        this.itemPerPage = itemPerPage;
-        this.countColumn = countColumn;
+public class TableConfig<T> {
+    private  List<T> items;
+    private  int totalPages;
+    private  Map<T,Integer>itemsMap;
+    public TableConfig() {
     }
 
-    public String getTableName() { return tableName; }
-    public int getItemPerPage() { return itemPerPage; }
-    public String getCountColumn() { return countColumn; }
+    public TableConfig(List<T> items, int totalPages) {
+        this.items = items;
+        this.totalPages = totalPages;
+    }
+    public TableConfig(Map<T,Integer> itemsMap, int totalPages) {
+        this.itemsMap = itemsMap;
+        this.totalPages = totalPages;
+    }
+
+    public List<T> getItems() {
+        return items;
+    }
+
+    public Map<T,Integer> getItemsMap() {
+        return itemsMap;
+    }
+
+    public int getTotalPages() {
+        return totalPages;
+    }
+
 }
