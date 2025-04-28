@@ -29,11 +29,12 @@ public class studentUI {
             System.out.println("║        TRANG SINH VIEN        ║");
             System.out.println("╠═══════════════════════════════╣");
             System.out.println("║ 1. Danh sach khoa hoc         ║");
-            System.out.println("║ 2. Dang ky khoa hoc           ║");
-            System.out.println("║ 3. Xem khoa hoc da dang ky    ║");
-            System.out.println("║ 4. Huy dang ky khoa hoc       ║");
-            System.out.println("║ 5. Thay doi mat khau          ║");
-            System.out.println("║ 6. Thoat                      ║");
+            System.out.println("║ 2. Tim kiem khoa hoc          ║");
+            System.out.println("║ 3. Dang ky khoa hoc           ║");
+            System.out.println("║ 4. Xem khoa hoc da dang ky    ║");
+            System.out.println("║ 5. Huy dang ky khoa hoc       ║");
+            System.out.println("║ 6. Thay doi mat khau          ║");
+            System.out.println("║ 7. Thoat                      ║");
             System.out.println("╚═══════════════════════════════╝");
             int choice= Validator.validateInteger("Nhap lua chon: ",sc);
             switch (choice){
@@ -41,19 +42,23 @@ public class studentUI {
                     studentUI.displayCourse(sc);
                     break;
                 case 2:
-                    studentUI.assignCourse(sc);
+                    studentUI.findCourseByName(sc);
                     break;
                 case 3:
-                    studentUI.showEnrollmentsByStudent(sc);
+                    studentUI.assignCourse(sc);
                     break;
                 case 4:
-                    studentUI.cancleEnrollment(sc);
+                    studentUI.showEnrollmentsByStudent(sc);
                     break;
                 case 5:
-                    studentUI.changePassword(sc);
+                    studentUI.cancleEnrollment(sc);
                     break;
                 case 6:
+                    studentUI.changePassword(sc);
+                    break;
+                case 7:
                     return;
+
                 default:
                     System.out.println("Lua chon ko hop le. Hay nhap lai");
             }
@@ -66,7 +71,7 @@ public class studentUI {
             List<Course> courses = tableConfig.getItems();
             System.out.println("╔════════════════════════════════╦════════════════════════════════╦════════════════════════════════╦════════════════════════════════╦════════════════════════════════╗");
             System.out.printf("║ %-30s ║ %-30s ║ %-30s ║ %-30s ║ %-30s ║%n",
-                    "Ma Khoa Hoc", "Ten Khoa Hoc", "Thoi Gian", "Giang Vien", "Ngay Tao");
+                    "Ma Khoa Hoc", "Ten Khoa Hoc", "Thoi Gian", "Giang Vien", "Trang thai");
 
             System.out.println("╠════════════════════════════════╬════════════════════════════════╬════════════════════════════════╬════════════════════════════════╬════════════════════════════════╣");
             for (Course co : courses) {
@@ -75,6 +80,31 @@ public class studentUI {
             System.out.println("╚════════════════════════════════╩════════════════════════════════╩════════════════════════════════╩════════════════════════════════╩════════════════════════════════╝");
             currentPage = PaginationUtil.handlePagination(sc, currentPage, tableConfig.getTotalPages());
             if (currentPage == 0) {
+                return; // Exit pagination
+            }
+        } while (true);
+    }
+    public void findCourseByName(Scanner sc){
+        String name = Validator.validateString("Nhap ten khoa hoc", sc, 1, 100);
+        int current_page = 1;
+        do {
+            TableConfig<Course> tableConfig = courseService.findCourseByName(current_page, name);
+            List<Course> courses = tableConfig.getItems();
+            if (courses.isEmpty()){
+                System.out.println("khong tim thay khoa hoc");
+                return;
+            }
+            System.out.println("╔════════════════════════════════╦════════════════════════════════╦════════════════════════════════╦════════════════════════════════╦════════════════════════════════╗");
+            System.out.printf("║ %-30s ║ %-30s ║ %-30s ║ %-30s ║ %-30s ║%n",
+                    "Ma Khoa Hoc", "Ten Khoa Hoc", "Thoi Gian", "Giang Vien", "Trang thai");
+
+            System.out.println("╠════════════════════════════════╬════════════════════════════════╬════════════════════════════════╬════════════════════════════════╬════════════════════════════════╣");
+            for (Course co : courses) {
+                co.displayData();
+            }
+            System.out.println("╚════════════════════════════════╩════════════════════════════════╩════════════════════════════════╩════════════════════════════════╩════════════════════════════════╝");
+            current_page = PaginationUtil.handlePagination(sc, current_page, tableConfig.getTotalPages());
+            if (current_page == 0) {
                 return; // Exit pagination
             }
         } while (true);
@@ -106,7 +136,7 @@ public class studentUI {
             }
             System.out.println("╔════════════════════════════════╦════════════════════════════════╦════════════════════════════════╦════════════════════════════════╦════════════════════════════════╗");
             System.out.printf("║ %-30s ║ %-30s ║ %-30s ║ %-30s ║ %-30s ║%n",
-                    "Ma giao dich", "Ten hoc vien", "Ten khoa hoc", "Thoi gian dang ky", "Ngay Tao");
+                    "Ma giao dich", "Ten hoc vien", "Ten khoa hoc", "Thoi gian dang ky", "Trang thai");
 
             System.out.println("╠════════════════════════════════╬════════════════════════════════╬════════════════════════════════╬════════════════════════════════╬════════════════════════════════╣");
             for (Enrollment enrollment : enrollments) {

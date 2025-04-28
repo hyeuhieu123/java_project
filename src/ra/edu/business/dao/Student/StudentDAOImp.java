@@ -369,7 +369,7 @@ public class StudentDAOImp implements StudentDAO{
         List<Enrollment> enrollments = new ArrayList<>();
         try{
             conn = ConnectionDB.openConnection();
-            callSt=conn.prepareCall("select * from enrollment where student_id =?   limit ? offset ?");
+            callSt=conn.prepareCall("select * from enrollment where student_id =? order by status  limit ? offset ? ");
             callSt.setInt(1,student.getId());
             callSt.setInt(2,pageSize);
             callSt.setInt(3,(page-1)*pageSize);

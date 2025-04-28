@@ -16,13 +16,13 @@ public class MainApplication {
 
         while (true) {
             System.out.println("╔═══════════════════════════════╗");
-            System.out.println("║         Login Page            ║");
+            System.out.println("║         TRANG DANG NHAP       ║");
             System.out.println("╠═══════════════════════════════╣");
-            System.out.println("║ 1. Login                      ║");
-            System.out.println("║ 2. Exit                       ║");
+            System.out.println("║ 1. Dang nhap                  ║");
+            System.out.println("║ 2. Thoat                      ║");
             System.out.println("╚═══════════════════════════════╝");
 
-            int choice = Validator.validateInteger("Enter your choice:", sc);
+            int choice = Validator.validateInteger("Nhap lua chon", sc);
             switch (choice) {
                 case 1:
                     loginUI.login(sc);
@@ -30,7 +30,7 @@ public class MainApplication {
                 case 2:
                     System.exit(0);
                 default:
-                    System.err.println("Please choose 1-2");
+                    System.err.println("Hay nhap tu 1-2");
             }
         }
     }

@@ -4,50 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cec05c6-6c0c-48e1-99af-945ab5b8e21a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/Enrollment/EnrollmentDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/Enrollment/EnrollmentDAOImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/statistict/StatistictDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/statistict/StatististDAOImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/model/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/model/Enrollment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/service/Enrollment/EnrollmentSERVICE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/service/Enrollment/EnrollmentServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/service/Statistict/StatistictSERVICE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/edu/business/service/Statistict/StatistictServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/edu/presentation/admin/EnrollmentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/edu/presentation/admin/StatistictManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/edu/presentation/admin/StudentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/edu/utils/PaginationUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/edu/validate/StudentValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7f0daf8a-bcbe-4c68-85a0-cdfd6d716000.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7f0daf8a-bcbe-4c68-85a0-cdfd6d716000.xml" afterDir="false" />
+    <list default="true" id="1cec05c6-6c0c-48e1-99af-945ab5b8e21a" name="Changes" comment="add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7f0daf8a-bcbe-4c68-85a0-cdfd6d716000/console.sql" beforeDir="false" afterPath="$PROJECT_DIR$/7f0daf8a-bcbe-4c68-85a0-cdfd6d716000/console.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/dao/AppDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/AppDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/dao/Course/CourseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/Course/CourseDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/dao/Course/CourseDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/Course/CourseDAOImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ra/edu/business/dao/Student/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/Student/StudentDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ra/edu/business/dao/Student/StudentDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/Student/StudentDAOImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/dao/login/loginDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/dao/login/loginDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/model/Admin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/model/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/service/AppService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/service/AppService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/service/Course/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/service/Course/CourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/service/Course/CourseServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/service/Course/CourseServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/service/Student/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/service/Student/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/service/Student/StudentServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/service/Student/StudentServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/business/service/login/loginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/business/service/login/loginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/presentation/admin/CourseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/presentation/admin/CourseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/presentation/admin/adminUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/presentation/admin/AdminUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/presentation/login/LoginUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/presentation/login/LoginUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ra/edu/presentation/student/studentUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/presentation/student/studentUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/utils/CurrentStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/utils/CurrentStudent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/utils/TableConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/utils/TableConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/validate/CourseValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/validate/CourseValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ra/edu/validate/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/edu/validate/Validator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +147,18 @@
       <workItem from="1745506551809" duration="15000" />
       <workItem from="1745561872384" duration="538000" />
       <workItem from="1745568927802" duration="7835000" />
+      <workItem from="1745577138291" duration="248000" />
+      <workItem from="1745845835951" duration="1926000" />
     </task>
+    <task id="LOCAL-00001" summary="add">
+      <option name="closed" value="true" />
+      <created>1745577159418</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745577159418</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +174,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add" />
+    <option name="LAST_COMMIT_MESSAGE" value="add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

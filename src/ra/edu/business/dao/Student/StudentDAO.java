@@ -29,4 +29,5 @@ public interface StudentDAO extends AppDAO<Student> {
     boolean changePassword(String password,Student student);
 
     public boolean isEmailExists(String email);
+
 }
